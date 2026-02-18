@@ -192,6 +192,20 @@ h2 {
     display: inline-block;
     border-radius: 6px;
 }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 200px); /* fixed smaller size */
+    justify-content: center; /* centers the gallery */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}              
 
 /* Table styling fixed clearly */
 table {
@@ -240,6 +254,7 @@ footer {
     margin-top: 20px;
 }
             </style>
+
 
 
 
