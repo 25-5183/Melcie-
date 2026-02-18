@@ -104,7 +104,7 @@ Foundation
             <td>Natural</td>
             <td>30ml</td>
             <td>50</td>
-            <td>KSH 20</td>
+            <td>KSH 2000</td>
             <td>10%</td>
             <td>4.5</td>
         </tr>
@@ -117,7 +117,7 @@ Foundation
             <td>Red</td>
             <td>Standard</td>
             <td>40</td>
-            <td>KSH 25</td>
+            <td>KSH 1250</td>
             <td>15%</td>
             <td>4.8</td>
         </tr>
@@ -130,7 +130,7 @@ Foundation
             <td>Black</td>
             <td>15ml</td>
             <td>35</td>
-            <td>KSH 18</td>
+            <td>KSH 1800</td>
             <td>5%</td>
             <td>4.4</td>
         </tr>
@@ -143,7 +143,7 @@ Foundation
             <td>Peach</td>
             <td>20g</td>
             <td>25</td>
-            <td>KSH 30</td>
+            <td>KSH 900</td>
             <td>20%</td>
             <td>4.9</td>
         </tr>
@@ -208,15 +208,16 @@ h2 {
 }
   .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 200px); /* fixed smaller size */
+    grid-template-columns: repeat(3, 1fr); /* fixed smaller size */
     justify-content: center; /* centers the gallery */
     gap: 15px;
+      padding-top:20px
     margin-top: 20px;
 }
 
 .gallery img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 8px;
 }              
@@ -269,6 +270,7 @@ footer {
 }
             </style>
       
+
 
 
 
