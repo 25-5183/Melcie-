@@ -3,19 +3,45 @@
 <head>
     <title>Glamour Glow Makeup Store</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Internal CSS -->
     <style>
+        /* ===== GENERAL PAGE STYLING ===== */
         body {
-            background-color: #f3e5f5; /* Light Purple */
+            background-color: #fff1f6; /* Soft blush */
+            color: #2c2c2c;
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
+        /* ===== HEADER & FOOTER ===== */
+        header, footer {
+            background-color: #d63384; /* Dusty rose */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ===== HEADINGS ===== */
         h2 {
-            color: #8e44ad; /* Purple headings */
+            color: #8e44ad; /* Mauve purple */
         }
 
+        h3 {
+            color: #6c3483;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 20px;
+        }
+
+        /* ===== HIGHLIGHT TEXT ===== */
+        .highlight {
+            color: #d63384;
+            font-weight: bold;
+        }
+
+        /* ===== IMAGE GALLERY ===== */
         .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -23,31 +49,51 @@
             padding: 20px;
         }
 
-        .image-container {
-            background-color: #ffe6f0; /* Light pink container */
+        .gallery div {
+            background-color: #ffe6f0; /* Cream pink */
             padding: 10px;
             border-radius: 10px;
         }
 
-        .image-container img {
+        /* ===== TABLE STYLING ===== */
+        table {
             width: 100%;
-            height: 250px;
-            object-fit: cover;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #c084d6;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        /* ===== IFRAME ===== */
+        iframe {
             border-radius: 10px;
+            margin-right: 10px;
         }
     </style>
 </head>
 
 <body>
 
-<header style="background-color:#d63384;"> <!-- Inline CSS -->
+<header>
     <h1>Glamour Glow Makeup Store</h1>
     <p>Your Beauty, Our Passion</p>
 </header>
 
 <hr>
 
-<!-- SECTION 1 -->
 <section>
     <h2>About Us</h2>
 
@@ -60,7 +106,7 @@
 
     <p class="highlight">Limited Offer: 20% Discount This Week!</p>
 
-    <p style="color:#d63384; font-weight:bold;">
+    <p class="highlight">
         "Beauty begins the moment you decide to be yourself."
     </p>
 
@@ -71,10 +117,10 @@
 
 <hr>
 
-<!-- SECTION 2 -->
 <section>
     <h2>Our Products</h2>
 
+    <h3>Unordered List</h3>
     <ul>
         <li>Foundation</li>
         <li>Lipstick</li>
@@ -83,6 +129,7 @@
         <li>Blush</li>
     </ul>
 
+    <h3>Ordered List</h3>
     <ol>
         <li>Clean Face</li>
         <li>Apply Primer</li>
@@ -94,7 +141,6 @@
 
 <hr>
 
-<!-- SECTION 3 -->
 <section>
     <h2>Product Price Table</h2>
 
@@ -102,6 +148,7 @@
         <tr>
             <th>ID</th>
             <th>Product</th>
+            <th>Category</th>
             <th>Brand</th>
             <th>Price (KSH)</th>
         </tr>
@@ -109,60 +156,51 @@
         <tr>
             <td>1</td>
             <td>Foundation</td>
+            <td>Face</td>
             <td>Maybelline</td>
-            <td>KSH 2000</td>
+            <td>2000</td>
         </tr>
 
         <tr>
             <td>2</td>
             <td>Lipstick</td>
+            <td>Lips</td>
             <td>MAC</td>
-            <td>KSH 1250</td>
+            <td>1250</td>
         </tr>
 
         <tr>
             <td>3</td>
             <td>Mascara</td>
+            <td>Eyes</td>
             <td>Loreal</td>
-            <td>KSH 1800</td>
+            <td>1800</td>
         </tr>
     </table>
 </section>
 
 <hr>
 
-<!-- IMAGE GALLERY -->
 <section>
     <h2>Melcie's Work of Art</h2>
 
     <div class="gallery">
-
-        <div class="image-container">
-            <img src="https://i.pinimg.com/1200x/52/1b/c8/521bc81d3a6e92760269055f4d045050.jpg" alt="Makeup 1">
+        <div>
+            <img src="https://i.pinimg.com/1200x/52/1b/c8/521bc81d3a6e92760269055f4d045050.jpg" width="100%">
         </div>
 
-        <div class="image-container">
-            <img src="https://i.pinimg.com/1200x/96/30/fe/9630fe3474a3e30ac677adc0090b15b3.jpg" alt="Makeup 2">
+        <div>
+            <img src="https://i.pinimg.com/1200x/96/30/fe/9630fe3474a3e30ac677adc0090b15b3.jpg" width="100%">
         </div>
 
-        <div class="image-container">
-            <img src="https://i.pinimg.com/736x/53/90/85/53908596cb18c36508c77510b6528e1c.jpg" alt="Makeup 3">
+        <div>
+            <img src="https://i.pinimg.com/736x/53/90/85/53908596cb18c36508c77510b6528e1c.jpg" width="100%">
         </div>
-
-        <div class="image-container">
-            <img src="https://i.pinimg.com/736x/5d/8f/5c/5d8f5cc629620d56ec03d0bf120f7fac.jpg" alt="Makeup 4">
-        </div>
-
-        <div class="image-container">
-            <img src="https://i.pinimg.com/736x/e9/15/88/e915885eb2ae19fd5ae943dc737b5cfa.jpg" alt="Makeup 5">
-        </div>
-
     </div>
 </section>
 
 <hr>
 
-<!-- VIDEOS -->
 <section>
     <h2>Makeup Videos</h2>
 
@@ -179,62 +217,7 @@
 
 <footer>
     <p>&copy; 2026 Glamour Glow Makeup Store</p>
-    <p>Contact: glamourglow@email.com</p>
 </footer>
 
 </body>
 </html>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-section {
-    padding: 20px;
-    background-color: white;
-}
-
-.highlight {
-    background-color: #ffb6d9;
-    color: #a0005a;
-    padding: 8px;
-    font-weight: bold;
-    border-radius: 6px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    border: 2px solid #d63384;
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: #f8c8dc;
-}
-
-blockquote {
-    background-color: #f9d6e5;
-    padding: 10px;
-    border-left: 5px solid #d63384;
-}
-
-footer {
-    background-color: #8e44ad; /* Purple */
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-}
