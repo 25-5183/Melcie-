@@ -6,10 +6,10 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Internal CSS (3 clear rules) -->
+    <!-- Internal CSS -->
     <style>
         body {
-            background-color: #f3e5f5; /* Purple background */
+            background-color: #f3e5f5; /* Light Purple */
         }
 
         h2 {
@@ -22,19 +22,32 @@
             gap: 15px;
             padding: 20px;
         }
+
+        .image-container {
+            background-color: #ffe6f0; /* Light pink container */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
 <body>
 
-<header style="background-color:#d63384;"> <!-- Inline CSS 1 -->
+<header style="background-color:#d63384;"> <!-- Inline CSS -->
     <h1>Glamour Glow Makeup Store</h1>
     <p>Your Beauty, Our Passion</p>
 </header>
 
 <hr>
 
-<!-- CONTENT 1 -->
+<!-- SECTION 1 -->
 <section>
     <h2>About Us</h2>
 
@@ -47,7 +60,7 @@
 
     <p class="highlight">Limited Offer: 20% Discount This Week!</p>
 
-    <p style="color:#d63384; font-weight:bold;"> <!-- Inline CSS 2 -->
+    <p style="color:#d63384; font-weight:bold;">
         "Beauty begins the moment you decide to be yourself."
     </p>
 
@@ -58,11 +71,10 @@
 
 <hr>
 
-<!-- CONTENT 2 -->
+<!-- SECTION 2 -->
 <section>
     <h2>Our Products</h2>
 
-    <h3>Unordered List</h3>
     <ul>
         <li>Foundation</li>
         <li>Lipstick</li>
@@ -71,7 +83,6 @@
         <li>Blush</li>
     </ul>
 
-    <h3>Ordered List</h3>
     <ol>
         <li>Clean Face</li>
         <li>Apply Primer</li>
@@ -83,7 +94,7 @@
 
 <hr>
 
-<!-- CONTENT 3 -->
+<!-- SECTION 3 -->
 <section>
     <h2>Product Price Table</h2>
 
@@ -91,84 +102,7 @@
         <tr>
             <th>ID</th>
             <th>Product</th>
-            <th>Category</th>
             <th>Brand</th>
-            <th>Price (KSH)</th>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>Foundation</td>
-            <td>Face</td>
-            <td>Maybelline</td>
-            <td>KSH 2000</td>
-        </tr>
-
-        <tr>
-            <td>2</td>
-            <td>Lipstick</td>
-            <td>Lips</td>
-            <td>MAC</td>
-            <td>KSH 1250</td>
-        </tr>
-
-        <tr>
-            <td>3</td>
-            <td>Mascara</td>
-            <td>Eyes</td>
-            <td>Loreal</td>
-            <td>KSH 1800</td>
-        </tr>
-    </table>
-</section>
-
-<hr>
-
-<!-- IMAGE CONTAINERS (More than 3 ✔) -->
-<section>
-    <h2>Melcie's Work of Art</h2>
-
-    <div class="gallery">
-
-        <div style="background-color:#ffe6f0; padding:10px; border-radius:10px;"> <!-- Inline CSS 3 -->
-            <img src="https://i.pinimg.com/1200x/52/1b/c8/521bc81d3a6e92760269055f4d045050.jpg" width="100%">
-        </div>
-
-        <div style="background-color:#ffe6f0; padding:10px; border-radius:10px;">
-            <img src="https://i.pinimg.com/1200x/96/30/fe/9630fe3474a3e30ac677adc0090b15b3.jpg" width="100%">
-        </div>
-
-        <div style="background-color:#ffe6f0; padding:10px; border-radius:10px;">
-            <img src="https://i.pinimg.com/736x/53/90/85/53908596cb18c36508c77510b6528e1c.jpg" width="100%">
-        </div>
-
-    </div>
-</section>
-
-<hr>
-
-<section>
-    <h2>Makeup Videos</h2>
-
-    <iframe width="300" height="200"
-        src="https://www.youtube.com/embed/G6JUkMso0IQ"
-        allowfullscreen>
-    </iframe>
-
-    <iframe width="300" height="200"
-        src="https://www.youtube.com/embed/HM7DOiYcU8s"
-        allowfullscreen>
-    </iframe>
-
-</section>
-
-<footer style="background-color:#8e44ad;"> <!-- Inline CSS 4 (extra is fine) -->
-    <p>&copy; 2026 Glamour Glow Makeup Store</p>
-</footer>
-
-</body>
-</html>
-
 
 
 
