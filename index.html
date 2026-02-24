@@ -3,113 +3,66 @@
 <head>
     <title>Glamour Glow Makeup Store</title>
 
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS (3 rules added clearly) -->
     <style>
-        /* ===== GENERAL PAGE STYLING ===== */
-        body {
-            background-color: sky blue 
-        /* Soft blush */
-            color: #2c2c2c;
-            font-family: "Segoe UI", Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* ===== HEADER & FOOTER ===== */
-        header, footer {
-            background-color: #d63384; /* Dusty rose */
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* ===== HEADINGS ===== */
-        h2 {
-            color: #8e44ad; /* Mauve purple */
-        }
-
-        h3 {
-            color: #6c3483;
-        }
-
-        /* ===== SECTIONS ===== */
-        section {
-            padding: 20px;
-        }
-
-        /* ===== HIGHLIGHT TEXT ===== */
-        .highlight {
-            color: #d63384;
-            font-weight: bold;
-        }
-
-        /* ===== IMAGE GALLERY ===== */
         .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+            gap: 20px;
             padding: 20px;
         }
 
-        .gallery div {
-            background-color: #ffe6f0; /* Cream pink */
-            padding: 10px;
+        .product-card {
+            background-color: #ffe6f0;
+            padding: 15px;
             border-radius: 10px;
-        }
-
-        /* ===== TABLE STYLING ===== */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th {
-            background-color: #c084d6;
-            color: white;
-            padding: 10px;
-        }
-
-        td {
-            background-color: white;
-            padding: 10px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-
-        /* ===== IFRAME ===== */
-        iframe {
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
             border-radius: 10px;
-            margin-right: 10px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
         }
     </style>
-    text-align: center;
 </head>
 
-<body>
+<body style="background-color:#f3e5f5;"> <!-- Inline CSS 1 (Purple background) -->
 
 <header>
     <h1>Glamour Glow Makeup Store</h1>
     <p>Your Beauty, Our Passion</p>
 </header>
 
-<hr>
-
+<!-- CONTENT 1 -->
 <section>
     <h2>About Us</h2>
 
     <p><b>Welcome to Glamour Glow</b> where beauty meets elegance.</p>
     <p><i>We provide high-quality makeup products</i> for every skin type.</p>
     <p><u>Our mission is to enhance your natural beauty.</u></p>
-    <p>Our store was established on 14<sup>th</sup> February 2025.</p>
-    <p>Water formula H<sub>2</sub>O is used in some skincare products.</p>
-    <p><strike>Old Price: KSH 1500</strike> New Price: KSH 1350</p>
+    <p>Established on 14<sup>th</sup> February 2020.</p>
 
     <p class="highlight">Limited Offer: 20% Discount This Week!</p>
 
-    <p class="highlight">
-        "Beauty begins the moment you decide to be yourself."
+    <!-- Inline CSS 2 -->
+    <p style="color:#d63384; font-weight:bold;">
+        Beauty begins the moment you decide to be yourself.
+    </p>
+
+    <!-- Inline CSS 3 -->
+    <p style="background-color:#ffb6d9; padding:10px;">
+        Shop now and glow differently ✨
     </p>
 
     <blockquote>
@@ -119,30 +72,49 @@
 
 <hr>
 
+<!-- CONTENT 2 -->
 <section>
     <h2>Our Products</h2>
 
-    <h3>Unordered List</h3>
-    <ul>
-        <li>Foundation</li>
-        <li>Lipstick</li>
-        <li>Mascara</li>
-        <li>Eyeshadow</li>
-        <li>Blush</li>
-    </ul>
+    <!-- 5 Image Containers -->
+    <div class="gallery">
 
-    <h3>Ordered List</h3>
-    <ol>
-        <li>Clean Face</li>
-        <li>Apply Primer</li>
-        <li>Apply Foundation</li>
-        <li>Add Eye Makeup</li>
-        <li>Finish with Lipstick</li>
-    </ol>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/8b/c2/04/8bc20457b3302dfa60ec4ae121a9400a.jpg">
+            <h3>Foundation</h3>
+            <p>KSH 20</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/59/2f/bc/592fbcec9200ed6782588c27748f0731.jpg">
+            <h3>Lipstick</h3>
+            <p>KSH 25</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/8b/c2/04/8bc20457b3302dfa60ec4ae121a9400a.jpg">
+            <h3>Mascara</h3>
+            <p>KSH 18</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/59/2f/bc/592fbcec9200ed6782588c27748f0731.jpg">
+            <h3>Blush</h3>
+            <p>KSH 30</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/8b/c2/04/8bc20457b3302dfa60ec4ae121a9400a.jpg">
+            <h3>Eyeshadow</h3>
+            <p>KSH 22</p>
+        </div>
+
+    </div>
 </section>
 
 <hr>
 
+<!-- CONTENT 3 -->
 <section>
     <h2>Product Price Table</h2>
 
@@ -150,77 +122,38 @@
         <tr>
             <th>ID</th>
             <th>Product</th>
-            <th>Category</th>
             <th>Brand</th>
-            <th>Price (KSH)</th>
+            <th>Price</th>
         </tr>
 
         <tr>
             <td>1</td>
             <td>Foundation</td>
-            <td>Face</td>
             <td>Maybelline</td>
-            <td>2000</td>
+            <td>KSH 20</td>
         </tr>
 
         <tr>
             <td>2</td>
             <td>Lipstick</td>
-            <td>Lips</td>
             <td>MAC</td>
-            <td>1250</td>
+            <td>KSH 25</td>
         </tr>
 
         <tr>
             <td>3</td>
             <td>Mascara</td>
-            <td>Eyes</td>
             <td>Loreal</td>
-            <td>1800</td>
+            <td>KSH 18</td>
         </tr>
     </table>
 </section>
 
-<hr>
-
-<section>
-    <h2>Melcie's Work of Art</h2>
-
-    <div class="gallery">
-        <div>
-            <img src="https://i.pinimg.com/1200x/52/1b/c8/521bc81d3a6e92760269055f4d045050.jpg" width="100%">
-        </div>
-
-        <div class="container">
-            <img src="https://i.pinimg.com/1200x/96/30/fe/9630fe3474a3e30ac677adc0090b15b3.jpg" width="100%">
-        </div>
-
-        <div class="container">
-            <img src="https://i.pinimg.com/736x/53/90/85/53908596cb18c36508c77510b6528e1c.jpg" width="100%">
-        </div>
-    </div>
-</section>
-
-<hr>
-
-<section>
-    <h2>Makeup Videos</h2>
-
-    <iframe width="300" height="200"
-        src="https://www.youtube.com/embed/G6JUkMso0IQ"
-        allowfullscreen>
-    </iframe>
-
-    <iframe width="300" height="200"
-        src="https://www.youtube.com/embed/HM7DOiYcU8s"
-        allowfullscreen>
-    </iframe>
-</section>
-
 <footer>
     <p>&copy; 2026 Glamour Glow Makeup Store</p>
+    <p>Contact us: glamourglow@email.com</p>
+    <p>Follow us on Instagram | Facebook | TikTok</p>
 </footer>
 
 </body>
 </html>
-
