@@ -1,16 +1,9 @@
-/* External paragraph */
 .external-paragraph{
-  color: white;
-  font-size: 18px;
+color: babypink;
+font-size: 18px;
 }
 
-/* External highlight */
-.external-highlight{
-  color: gold;
-}
-
-/* External beauty section */
-.external-beauty{
-  color: cyan;
-  font-style: italic;
+.external-fashion{
+color: red;
+font-style: italic;
 }
