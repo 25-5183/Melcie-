@@ -1,17 +1,16 @@
-/* External Paragraph */
-.external-paragraph {
-  color: purple;
-  text-decoration: underline;
+/* External paragraph */
+.external-paragraph{
+  color: white;
+  font-size: 18px;
 }
 
-/* External Highlight */
-.external-highlight {
-  color: blue;
-  text-decoration: underline;
+/* External highlight */
+.external-highlight{
+  color: gold;
 }
 
-/* External h3 */
-.external-beauty {
-  color: brown;
-  text-decoration: underline;
+/* External beauty section */
+.external-beauty{
+  color: cyan;
+  font-style: italic;
 }
